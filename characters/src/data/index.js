@@ -5,6 +5,6 @@ module.exports = {
         return dataCharacters;
     },
     create:async () => {
-        throw new err('no implementado');
+        throw new Error('no implementado');
     }
 };
