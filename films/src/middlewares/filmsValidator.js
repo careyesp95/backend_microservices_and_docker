@@ -1,4 +1,4 @@
-const {ClientError} = require('../helpers/httpErrors');
+const {ClientError} = require('../utils/errors');
 
 function filmsValidator(req,res,next){
     const {name} = req.body;

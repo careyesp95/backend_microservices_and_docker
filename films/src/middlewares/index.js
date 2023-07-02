@@ -1,3 +1,3 @@
 const filmsValidator = require('./filmsValidator');
 
-module.exports = filmsValidator;
+module.exports = {filmsValidator};

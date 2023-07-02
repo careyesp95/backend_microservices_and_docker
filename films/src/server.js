@@ -12,8 +12,8 @@ server.use('/films', routerFilms);
 
 server.use((err, req, res, next)=>{
     res.status(err.statusCode || 500).send({
-        error: err.message,
-        message: err.message,
+        error: true,
+        message: err.message
 
     })
 })
