@@ -1,5 +1,5 @@
 const response = require('./response');
-const catchAsync = require('./catchedAsync');
+const catchAsync = require('./catchAsync');
 
 module.exports = {
     response,

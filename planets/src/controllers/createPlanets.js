@@ -1,8 +1,8 @@
 const {response} = require('../utils/index');
-const dataHandlePlanets = require('../data/index');
+const {create} = require('../data/index')
 
-async function createPlanets (res,req){
-    const data = await dataHandlePlanets.create(req.body);
+async function createPlanets (req,res){
+    const data = await create();
     response(res,201,data)
 }
 

@@ -1,8 +1,8 @@
-const dataPlanets = require('../data/index')
+const {list} = require('../data/index')
 const {response} = require('../utils/index')
 
 async function getplanets(req, res){
-    const data = await dataPlanets.list();
+    const data = await list();
     response(res,200,data)
 }
 
