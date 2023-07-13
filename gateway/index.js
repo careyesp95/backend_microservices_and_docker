@@ -18,8 +18,8 @@ server.use('/planets', createProxyMiddleware({
     changeOrigin:true
 }))
 
-const PORT_GATEWAY = 8000;
+const PORT = 8000;
 
-server.listen(PORT_GATEWAY, () => {
-    console.log(`Gateway server listening on port ${PORT_GATEWAY}`);
+server.listen(PORT, () => {
+    console.log(`Gateway server listening on port ${PORT}`);
 })
