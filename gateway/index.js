@@ -6,15 +6,15 @@ const server = express();
 server.use(morgan('dev'));
 
 server.use('/characters', createProxyMiddleware({
-    target:'http://localhost:8001',
+    target:'http://characters:8001',
     changeOrigin:true
 }))
 server.use('/films', createProxyMiddleware({
-    target:'http://localhost:8002',
+    target:'http://films:8002',
     changeOrigin:true
 }))
 server.use('/planets', createProxyMiddleware({
-    target:'http://localhost:8003',
+    target:'http://planets:8003',
     changeOrigin:true
 }))
 
